@@ -1,0 +1,102 @@
+@import "compass";
+
+// font-family
+$baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+// colors
+$baseColor: #fdfcf6;
+$subColor: #bea300;
+$keyColor: #14c0c9;
+$fontColor: #4c4c4c;
+
+/* Base
+------------------------------------------------------------*/
+html{ font-size: 62.5%; }
+
+body{
+  color: $fontColor;
+  font-size: 1.4rem;
+  font-family:$baseFontFamily;
+  line-height:1.6;
+  letter-spacing: 0.1em;
+  background-color: $baseColor;
+}
+
+/* Align
+------------------------------------------------------------*/
+.text-center {
+  text-align: center; }
+  
+/* Layout
+------------------------------------------------------------*/
+.block-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header
+------------------------------------------------------------*/
+img {
+  width: 100%;
+  max-height: 250px;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.container {
+  @include display-flex;
+  justift-content: space-between;
+  @include flex-direction(column);
+  margin-bottom: 30px;
+  h3 {
+    background-color: $subColor;
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+  .content {
+    @include flex(1);
+    @include box-sizing(border-box);
+    background-color: lighten($subColor, 40%);
+    margin: 10px 0;
+  }  
+  p {
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+footer {
+  background-color: lighten($keyColor, 50%);
+  padding: 20px 0;
+}
+
+.button {
+  @extend .block-center;
+  text-align: center;
+  width: 200px;
+  padding: 5px 0;
+  background-color: $keyColor;
+  @include border-radius(4px, 4px);
+}
+
+// PC
+@media (min-width: 769px) {
+  img {
+    max-height: 500px;
+  }
+  
+  .container {
+    @include flex-direction(row);
+    justift-content: space-brtween;
+    .content {
+      margin: 0 10px;
+    }
+  }
+}
