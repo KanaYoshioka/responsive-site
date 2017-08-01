@@ -37,9 +37,13 @@ body{
 
 /* Header
 ------------------------------------------------------------*/
-img {
+#header-img {
+  background-image: url(../images/image01.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   width: 100%;
-  max-height: 250px;
+  height: 250px;
   margin-bottom: 50px;
 }
 
@@ -88,8 +92,8 @@ footer {
 
 // PC
 @media (min-width: 769px) {
-  img {
-    max-height: 500px;
+  #header-img {
+    height: 500px;
   }
   
   .container {

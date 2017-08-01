@@ -2,8 +2,7 @@
 /* Base
 ------------------------------------------------------------*/
 html {
-  font-size: 62.5%;
-}
+  font-size: 62.5%; }
 
 body {
   color: #4c4c4c;
@@ -11,36 +10,35 @@ body {
   font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   line-height: 1.6;
   letter-spacing: 0.1em;
-  background-color: #fdfcf6;
-}
+  background-color: #fdfcf6; }
 
 /* Align
 ------------------------------------------------------------*/
 .text-center {
-  text-align: center;
-}
+  text-align: center; }
 
 /* Layout
 ------------------------------------------------------------*/
 .block-center, .button {
   display: block;
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; }
 
 /* Header
 ------------------------------------------------------------*/
-img {
+#header-img {
+  background-image: url(../images/image01.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   width: 100%;
-  max-height: 250px;
-  margin-bottom: 50px;
-}
+  height: 250px;
+  margin-bottom: 50px; }
 
 h2 {
   font-size: 2.4rem;
   font-weight: bold;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
 .container {
   display: -webkit-flex;
@@ -48,32 +46,27 @@ h2 {
   justift-content: space-between;
   -webkit-flex-direction: column;
   flex-direction: column;
-  margin-bottom: 30px;
-}
-.container h3 {
-  background-color: #bea300;
-  font-weight: bold;
-  font-size: 1.8rem;
-}
-.container .content {
-  -webkit-flex: 1;
-  flex: 1;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  background-color: #ffef8b;
-  margin: 10px 0;
-}
-.container p {
-  padding: 10px;
-  margin-right: auto;
-  margin-left: auto;
-}
+  margin-bottom: 30px; }
+  .container h3 {
+    background-color: #bea300;
+    font-weight: bold;
+    font-size: 1.8rem; }
+  .container .content {
+    -webkit-flex: 1;
+    flex: 1;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #ffef8b;
+    margin: 10px 0; }
+  .container p {
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto; }
 
 footer {
   background-color: #e0fbfc;
-  padding: 20px 0;
-}
+  padding: 20px 0; }
 
 .button {
   text-align: center;
@@ -82,20 +75,17 @@ footer {
   background-color: #14c0c9;
   -moz-border-radius: 4px / 4px;
   -webkit-border-radius: 4px 4px;
-  border-radius: 4px / 4px;
-}
+  border-radius: 4px / 4px; }
 
 @media (min-width: 769px) {
-  img {
-    max-height: 500px;
-  }
+  #header-img {
+    height: 500px; }
 
   .container {
     -webkit-flex-direction: row;
     flex-direction: row;
-    justift-content: space-brtween;
-  }
-  .container .content {
-    margin: 0 10px;
-  }
-}
+    justift-content: space-brtween; }
+    .container .content {
+      margin: 0 10px; } }
+
+/*# sourceMappingURL=style.css.map */
